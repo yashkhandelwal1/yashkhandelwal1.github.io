@@ -1,0 +1,17 @@
+.first-letter::first-letter{
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.first-letter::after{
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url(images/yash.jpg);
+}
+
+.first-letter::before{
+    content: 'Hi';
+}
