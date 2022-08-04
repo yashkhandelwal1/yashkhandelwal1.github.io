@@ -14,8 +14,8 @@ body{
     height: 65vh;
     background-size: cover;
     background-position: center;
-    background-color: black;
-    opacity: 1.2;
+    background:linear-gradient(#2857a4,#403066);
+    opacity: 1;
     background-attachment: fixed;
     padding-top: 1.2rem;
 }
@@ -156,7 +156,7 @@ section{
 }
 
 section:nth-child(2n){
-    background-color: lightpink;
+    background-color: lightgray;
 }
 
 section:nth-child(2n + 1){
@@ -401,4 +401,24 @@ section:nth-child(2n + 1){
     height: 0.5rem;
     background-color: red;
     z-index: 1;
+}
+
+/* internships */
+
+#work-experience{
+    height: 50vh;
+}
+#cn{
+    width: 40%;
+    justify-content: center;
+}
+
+.cn-heading{
+    line-height: 1.5rem;
+    font-size: 20px;
+}
+
+.cn-date{
+    font-family: sans-serif;
+    color:blue;
 }
