@@ -368,6 +368,46 @@ section:nth-child(2n + 1){
     left: 50%;
 }
 
+@media screen and (max-width: 600px){
+    .timeline-divider{
+        left: 5%;
+    }
+    .timeline-box{
+        left: 12% !important;
+        width: 80%;
+    }
+
+    .timeline-box::after{
+        left: -11% !important;
+    }
+
+    #education{
+        height: auto;
+    }
+    #work-experience{
+        height: auto;
+    }
+
+    #flex-try{
+        margin-right: 20%;
+        margin-bottom: 0.1%;
+    }
+
+    #contact-form {
+        margin-left: 0%;
+    }
+
+    #contact-form-address {
+        flex-wrap: wrap;
+    }
+
+    #contact-form-container {
+        width: 80%;
+        margin: 10%;
+    }
+
+}
+
 .timeline-box:nth-child(2n){
     left: 53%;
 }
@@ -403,10 +443,11 @@ section:nth-child(2n + 1){
     z-index: 1;
 }
 
+
 /* internships */
 
 #work-experience{
-    height: 50vh;
+    height: 75vh;
 }
 #cn{
     width: 40%;
