@@ -39,7 +39,7 @@ body{
 }
 
 .nav-menu li a {
-    transition: color 0.5s, border-bottom 4s;
+    transition: color 0.5s, border-bottom 4s ease-in-out;
 }
 
 .nav-menu li a:hover {
