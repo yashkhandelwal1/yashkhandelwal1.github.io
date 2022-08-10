@@ -11,6 +11,37 @@
 <body>
     <header id="body-header">
         <nav>
+            <div class = "dropdown-menu text-right">
+                <div class="bars">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class ="dropdown-list nav-menu">
+                    <ul class = "no-list-style">
+                        <li >
+                            <a href="#"> Home </a>
+                        </li>
+                        <li>
+                            <a href="#about"> About </a>
+                        </li>
+                        <li>
+                            <a href="#skills"> Skills </a>
+                        </li>
+                        <li>
+                            <a href="#experience">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#education">Education</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Blog-Project</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    </div>
+
+             </div>   
             <ul class="horizontal-list text-center nav-menu">
                 <li>
                     <a href="">Home</a>
@@ -33,12 +64,13 @@
                 </li>
 
                 <li>
+                    <a href="blog.html">Blog-Project</a>
+                </li>
+                <li>
                     <a href="#contact">Contact</a>
                 </li>
 
-                <li>
-                    <a href="blog.html">Blog-Project</a>
-                </li>
+                
 
             </ul>
 
@@ -218,68 +250,111 @@
 
         </section>
 
-        <section id="work-experience">
-            <h1 class="section-heading mb75px ">
+        <section id="experience">
+
+            <h1 class="section-heading mb75px">
                 <span>
-                    <i class="fa-solid fa-briefcase"></i>
+                    <i class="fas fa-briefcase"></i>
                 </span>
-                <span> INTERNSHIPS </span>
+                <span> Work Experience </span>
             </h1>
 
-            <div id="cn">
-                <h3>Teaching Assistant Intern</h3>
-                <p class="cn-heading">Coding Ninjas</p>
-                <p class="cn-date"><i>06/2022 - Present</i></p>
-                <ul type="disc">
-                    <li>Teaching Assistant for the course of Data Structures and Algorithms in Java. 
-                        My responsibility is to resolve the doubts of the students that they get in the course. </li>
-                        <li>Solved 400+ doubts of the students related to Data Structure and Algorithms with an average rating of 4.73/5.00 .</li>
-                        <li>Learned a lot during this internship. Learned how to debug the codes written by others, how to write clean code, how to explain the code to others and make them understand the logic. 
-                            All these things made my concepts of DSA more stronger.</li>
-                    </ul>
+            <div class="timeline">
+
+                <div class="timeline-box ">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png">
+                        </div>
+                        <h3 class="experience-designation  m0 m-blue"> Teaching Assistant </h3>
+                        <h4 class="experience-company-name"> Coding Ninjas </h4>
+                        <h5 class="experience-duration m0"> June 2022 - October 2022 </h5>
+
+                        <p class="experience-description text-justify"> My responsibility is to resolve the doubts of the students that they get in the course.
+                            Solved 400+ doubts of the students related to Data Structure and Algorithms with an average rating of 4.73/5.00</p>
+                    </div>
+                </div>
+
             </div>
 
-        </section>
 
         <!-- <section id="portfolio">
 
         </section> -->
 
         <section id="contact">
-            <h1 class="section-heading-contact mb75px ">
+            <h1 class="section-heading mb50px">
                 <span>
-                    <i class="fa-solid fa-address-card"></i>
-                 Contact </span>
+                    <i class="far fa-address-card"></i>
+                </span>
+                <span> Contact </span>
             </h1>
+            <div id="contact-container">
 
-            <div id="contact-form-container">
-                <div id="contact-form">
-                    <form action="" method="post">
-                        <input type="text" id="Your-name" name="Your-name" required placeholder="Your Name">
-                        <br>
-                        <input type="email" id="Your-Email" name="Your-Email" required placeholder="Your Email">   
-                        <br>
-                        <textarea name="Message" id="" cols="30" rows="3" placeholder="Message"></textarea>
-                        <br>
-                        <button type="submit">Send Message</button>
-                   </form>
+                <div id="contact-form-container">
+                    <form id="contact-form">
+                        <input id="input-name" name="name" type="text" placeholder="Your Name">
+                        <input id="input-email" name="input-email" type="text" required placeholder="Your Email">
+                        <textarea id="input-message" name="input-message" rows="2" cols=40 placeholder="Message"></textarea>
+                        <button class="sub-btn" type="submit">SEND MESSAGE</button>
+                    </form>
                 </div>
-                <div id="contact-form-address">
-                    <h3>My Address</h3>
-                    <address>
-                        <span><i class="fa-solid fa-location-dot"></i></span>
-                        &nbsp;<span>Nagpur, India</span>
-                        <br>
-                        <span><i class="fa-solid fa-mobile-screen-button"></i></span>
-                       &nbsp; <span>+91-7721832029</span>
-                        <br>
-                        <span><i class="fa-solid fa-envelope"></i></span>
-                        &nbsp;<span>yashkhandelwal1997@gmail.com</span>
-                    </address>
+                <div id="my-details-container">
+
+                    <!-- <h3> Get In touch </h3>
+                    <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p> -->
+
+                    <h3> My Address </h3>
+                    <div class="my-details-info-container">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Nagpur, India</span>
+                    </div>
+                    <div class="my-details-info-container">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>+91-7721832029</span>
+                    </div>
+                    <div class="my-details-info-container">
+                        <i class="far fa-envelope"></i>
+                        <span>yashkhandelwal1997@gmail.com</span>
+                    </div>
                 </div>
             </div>
 
-            
+            <div class="text-center social-icons">
+
+                <ul class="no-list-style horizontal-list">
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/manisha-khattar-b5663641/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://stackoverflow.com/users/5608414/manisha?tab=profile" target="_blank">
+                            <i class="fab fa-stack-overflow"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://plus.google.com/u/0/103030702784925512939" target="_blank">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.facebook.com/manishakhattar54">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.quora.com/profile/Manisha-Khattar" target="_blank">
+                            <i class="fab fa-quora"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
 </body>
